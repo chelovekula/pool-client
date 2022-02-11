@@ -30,5 +30,3 @@ parallel-ssh  -i --hosts hosts.txt -x "-oStrictHostKeyChecking=no  -i aleo.pem" 
 parallel-ssh  -i --hosts hosts.txt -x "-oStrictHostKeyChecking=no  -i aleo.pem" 'sudo systemctl daemon-reload'
 parallel-ssh  -i --hosts hosts.txt -x "-oStrictHostKeyChecking=no  -i aleo.pem" 'sudo service jobclient restart'
 parallel-ssh  -i --hosts hosts.txt -x "-oStrictHostKeyChecking=no  -i aleo.pem" 'ps ax | grep pool-client'
-
-
